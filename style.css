@@ -1,0 +1,40 @@
+body {
+    h1 {
+        margin-bottom: 10px;
+    }
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .cell {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        background: #444;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .cell:hover {
+        background: #666;
+    }
+    .controls {
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background: #61dafb;
+        color: black;
+    }
+}    
